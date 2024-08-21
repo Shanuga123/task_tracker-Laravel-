@@ -1,6 +1,6 @@
 @extends('layouts.app')
   
-@section('title', 'Home Task')
+@section('title', 'All Tasks')
   
 @section('contents')
     <div class="d-flex align-items-center justify-content-between">
@@ -35,7 +35,7 @@
                         <td class="align-middle">{{ $rs->description }}</td>  
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="{{ route('tasks.show', $rs->id) }}" type="button" class="btn btn-secondary">Detail</a>
+                                <a href="{{ route('tasks.show', $rs->id) }}" type="button" class="btn btn-success">Detail</a>
                                 <a href="{{ route('tasks.edit', $rs->id)}}" type="button" class="btn btn-warning">Edit</a>
                                 <form action="{{ route('tasks.destroy', $rs->id) }}" method="POST" type="button" class="btn btn-danger p-0" onsubmit="return confirm('Delete?')">
                                     @csrf
