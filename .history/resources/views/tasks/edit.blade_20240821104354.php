@@ -15,7 +15,7 @@
             </div>
             <div class="col mb-3">
                 <label class="form-label">Date</label>
-                <input type="text" name="date" class="form-control" placeholder="Date" value="{{ $task->date }}" >
+                <input type="text" name="date" class="form-control" placeholder="Price" value="{{ $task->date }}" >
             </div>
         </div>
         <div class="row">

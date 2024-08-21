@@ -11,8 +11,8 @@
             <input type="text" name="title" class="form-control" placeholder="Title" value="{{ $task->title }}" readonly>
         </div>
         <div class="col mb-3">
-            <label class="form-label">Date</label>
-            <input type="text" name="date" class="form-control" placeholder="Date" value="{{ $task->date }}" readonly>
+            <label class="form-label">Price</label>
+            <input type="text" name="date" class="form-control" placeholder="Price" value="{{ $task->price }}" readonly>
         </div>
     </div>
     <div class="row">
